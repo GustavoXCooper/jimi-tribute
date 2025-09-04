@@ -1,6 +1,6 @@
 import '../../../styles/tribute.css'
 import { Menu } from '../components/Menu.jsx'
-import { YoutubePlayer } from '../components/YoutubePlayer/YoutubePlayer.jsx'
+import { YoutubePlayer } from '../components/YoutubePlayer.jsx'
 
 export const Tribute = () => {
     return (
