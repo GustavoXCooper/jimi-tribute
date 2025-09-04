@@ -1,17 +1,17 @@
 import '../../../styles/tribute.css'
 import { MenuItem } from './MenuItem'
 
-export const Menu = () => {
-    const items = ['teste1', 'teste2', 'teste3']
-    const listItems = items.map( (item, index) => (
-         <MenuItem key={index} name={item}></MenuItem>
-    ))
-
+export const Menu = ({ items, selected, onSelect }) => {
     return (
-
-            <ul className='sub-menu'>
-                {listItems}
-            </ul>
-
+        <ul className="sub-menu">
+        {items.map((item, index) => (
+            <MenuItem 
+            key={index} 
+            name={item} 
+            active={item === selected}
+            onClick={() => onSelect(item)} 
+            />
+        ))}
+        </ul>
     )
 }
