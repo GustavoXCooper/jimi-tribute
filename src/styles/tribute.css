@@ -5,21 +5,19 @@
 
 .body {
     height: 100%;
-    width: 100vw;
-    background-color: red;
+    max-width: 100vw;
 }
 
 .top {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #0f0f0f;
     width: 100%;
     height: 400px;
 }
 
 .bottom {
-    background-color: blueviolet;
     width: 100%;
     height: 400px;
 }
@@ -31,8 +29,8 @@
     align-items: center;
     height: 30px;
     width: 100%;
-    background-color: brown;
-    color: white;
+    background-color: #0f0f0f;
+    color: #ffff;
     list-style: none;
 }
 
@@ -48,4 +46,5 @@
 
 .sub-menu-item:hover {
     background-color: blue;
+    cursor: pointer;
 }
