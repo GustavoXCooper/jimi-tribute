@@ -1,14 +1,14 @@
 import ReactPlayer from 'react-player'
 
-export const YoutubePlayer = () => {
+export const YoutubePlayer = ({ url }) => {
     const baseURL = 'https://www.youtube.com/watch?v='
     return (
         <>
             <ReactPlayer 
-                src= { baseURL + "ODhMdujZeEY"}
+                src= { baseURL + url}
                 style={{
-                    width: '100px',
-                    
+                    width: '40vw',
+                    height: '350px'
                 }}
             />
         </>
