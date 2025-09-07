@@ -3,7 +3,10 @@ import { jimi } from '../features/mainPage/content/jimi.js'
 function App() {
   return (
     <>
-      <Tribute artistContent={jimi}></Tribute>
+      <Tribute 
+        artistContent={ jimi }
+        url={ jimi.content.foxy_lady.url }
+      />
     </>
   )
 }

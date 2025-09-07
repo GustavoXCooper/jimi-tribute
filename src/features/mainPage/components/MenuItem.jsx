@@ -1,4 +1,5 @@
 import '../../../styles/tribute.css'
+import { formatNameForMenu } from '../../../utils/formatNameForMenu'
 
 export const MenuItem = ({ name, active, onClick }) => {
   return (
@@ -6,7 +7,7 @@ export const MenuItem = ({ name, active, onClick }) => {
       className={`sub-menu-item ${active ? "active" : ""}`}
       onClick={onClick}
     >
-      {name}
+      {formatNameForMenu(name)}
     </li>
   )
 }
